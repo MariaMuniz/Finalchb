@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <TextView
+            android:id="@+id/textGrid"
+            android:text="Escolha um produto"
+            android:textSize="34sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <TextView
+            android:id="@+id/textAcomod"
+            android:text="Acomodação:"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="0.60"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/apt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Apartamento"
+                android:buttonTint="@android:color/holo_blue_dark"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/enf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enfermaria"
+                android:buttonTint="@android:color/holo_blue_dark"
+                android:textColor="@android:color/holo_blue_dark"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.40"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="8">
+
+
+        <!--column1 individ -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pleno"
+                    android:clickable="true"
+                    android:onClick="chamaPlenoUnimedEmpresa"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column2 individ -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="chamaUnimax"
+                    android:text="Unimax"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+
+                    />
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+        <!--column3 individ -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="chamaUnipartFlex30"
+                    android:text="Unipart Flex 30"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column4 individ -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="chamaUnipartFlex50"
+                    android:text="Unipart Flex 50"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <!--column5 individ -->
+
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="chamaUniFacilFlex300"
+                    android:text="Unifácil Flex 30"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+
+                    />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--column6 individ -->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="chamaUnifacilFlex50"
+                    android:text="Unifácil Flex 50"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
+
+                    />
+            </LinearLayout>
+
+
+            >
+        </android.support.v7.widget.CardView>
+    </GridLayout>
+
+</LinearLayout>

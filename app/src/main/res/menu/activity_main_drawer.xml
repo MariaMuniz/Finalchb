@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_simula"
+            android:icon="@drawable/ic_loyalty_24dp"
+            android:title="Simular preços" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_hotel_24dp"
+            android:title="Consultar cobertura" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_place_24dp"
+            android:title="Rede credenciada" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_history_24dp"
+            android:title="Consultar carencia" />
+    </group>
+
+    <item android:title="Comunicação">
+        <menu>
+            <item android:id="@+id/nav_telefone" android:icon="@drawable/ic_phone_24dp"
+                android:title="Telefone" />
+            <item android:id="@+id/nav_email" android:icon="@drawable/ic_local_post_office_24dp"
+                android:title="Email" />
+            <item
+                android:visible="true"
+                android:id="@+id/nav_atualiza" android:icon="@drawable/refresh"
+                android:title="Atualizar" />
+
+        </menu>
+    </item>
+
+</menu>

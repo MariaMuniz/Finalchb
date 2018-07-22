@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <TextView
+            android:id="@+id/textGrid"
+            android:text="Escolha um produto"
+            android:textSize="30sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <TextView
+            android:id="@+id/textAcomod"
+            android:text="Acomodação:"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/apt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Apartamento"
+                android:buttonTint="@android:color/holo_blue_dark"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/enf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enfermaria"
+                android:buttonTint="@android:color/holo_blue_dark"
+                android:textColor="@android:color/holo_blue_dark"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_marginLeft="35dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        >
+        <TextView
+            android:id="@+id/textAcomo"
+            android:text="Coparticipação:"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        >
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+
+
+            android:orientation="vertical">
+
+            <RadioButton android:id="@+id/coper"
+                android:layout_width="wrap_content"
+                android:buttonTint="@android:color/holo_blue_dark"
+                android:layout_height="wrap_content"
+                android:text="Com coparticipação"
+                android:textColor="@android:color/holo_blue_dark"
+                android:onClick="onButtonClicked"/>
+            <RadioButton android:id="@+id/semcoper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sem coparticipação"
+                android:buttonTint="@android:color/holo_blue_dark"
+                android:textColor="@android:color/holo_blue_dark"
+                android:onClick="onButtonClicked"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10.08"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="8">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/amil4supremo"
+                    android:onClick="chamaAmil400Supremo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/amil5supremo"
+                    android:onClick="chamaAmil500Supremo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/amil7supremo"
+                    android:onClick="chamaAmil700Supremo"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  />
+
+
+            </LinearLayout>
+
+
+    </GridLayout>
+</LinearLayout>

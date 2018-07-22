@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PlanoSaudeCHB</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings"> </string>
+
+    <string name="vitalis"><a href="https://chbsaude.com.br/planos/Ind_Vitallis_2018.pdf">Vitalis.pdf</a></string>
+    <string name="goodlife"><a href="https://chbsaude.com.br/planos/Ind_Goodlife_PF.pdf">Goodlife.pdf</a></string>
+    <string name="unimedindividual"><a href="https://chbsaude.com.br/planos/Ind_Unimed-BH_2018.pdf">Unimed.pdf</a></string>
+    <string name="medsenior"><a href="https://chbsaude.com.br/planos/974252dbcb9e62287618139d1a768ae8.pdf">MedSenior.pdf</a></string>
+    <string name="vivamedEmp"><a href="https://chbsaude.com.br/planos/Emp_Vivamed_2018_BH.pdf">Vivamed.pdf</a></string>
+    <string name="vivamedind"><a href="https://chbsaude.com.br/planos/Ind_Vivamed.pdf">Vivamed.pdf</a></string>
+
+
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="Dental"><a href="https://www.planosamildental.com.br/venda/pf/corretora/083895?codigoCorretor=37756125649&amp;supervisor.corretor.codigoCorretor=10099423600">Amil</a></string>
+
+
+    <string name="Amildental"><a href="https://www.planosamildental.com.br/venda/pf/corretora/083895?codigoCorretor=37756125649&amp;supervisor.corretor.codigoCorretor=10099423600">Win</a></string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

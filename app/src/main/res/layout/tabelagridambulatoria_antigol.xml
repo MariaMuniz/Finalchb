@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="40"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#ffffff">
+
+        <!-- Linha 1 com 4 colunas -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:text="F.Etária"
+                android:layout_weight="1"
+                android:background="#ADD8EC"
+                android:textColor="#000000"
+                android:padding="20dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:text="QTD"
+                android:layout_weight="1"
+                android:background="#ADD8EC"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/TextView10"
+                android:text="Preços"
+                android:layout_weight="1"
+                android:background="#ADD8EC"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:text="Total"
+                android:layout_weight="1"
+                android:background="#ADD8EC"
+                android:textColor="#000000"
+                android:padding="18dip"
+                android:gravity="center"/>
+        </TableRow>
+        <!-- Linha 2 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0 a 18"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/edtvalor1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+
+                android:id="@+id/edtPreco1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+
+                android:id="@+id/edtTotal1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+        <!-- Linha 3 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="19 a 23"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edtvalor2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPreco2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtTotal2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+        <!-- Linha 4 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="24 a 28"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/edtvalor3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPreco3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edtTotal3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+
+
+
+
+        <!-- Linha 2 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="29 a 33"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/edtvalor4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+
+                android:id="@+id/edtPreco4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+
+                android:id="@+id/edtTotal4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+        <!-- Linha 3 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="34 a 38"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edtvalor5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPreco5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtTotal5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+        <!-- Linha 4 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="39 a 43"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/edtvalor6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPreco6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edtTotal6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+
+        <!-- Linha 2 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="44 a 48"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/edtvalor7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+
+                android:id="@+id/edtPreco7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+
+                android:id="@+id/edtTotal7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+        <!-- Linha 3 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="49 a 53"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edtvalor8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPreco8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtTotal8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+        <!-- Linha 4 com 4 colunas -->
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="54 a 58"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+            <EditText
+                android:id="@+id/edtvalor9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPreco9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edtTotal9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:inputType="number">
+
+            </EditText>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true">
+
+
+            <ImageButton
+                android:id="@+id/buttonseta"
+                android:layout_width="wrap_content"
+                android:onClick="Chamaresultado"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seta"
+                android:background="@null"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

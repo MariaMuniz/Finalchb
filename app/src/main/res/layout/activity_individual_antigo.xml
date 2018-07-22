@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_weight="3.80"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <TextView
+            android:id="@+id/textGrid"
+            android:text="Escolha a Operadora"
+            android:textSize="30sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <GridLayout
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="9.93"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="14dp">
+
+
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/vitallisx"
+                android:onClick="chamaProdutoVitallis"
+                android:id="@+id/vitallis"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  />
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/goodx"
+            android:onClick="chamaProdutoGood"
+            android:id="@+id/goodlife"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  />
+
+
+    </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/unimedx"
+                    android:onClick="chamaProdutoUnimed"
+                    android:id="@+id/unimed"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/medseniorx"
+                    android:onClick="chamaProdutoMedSenior"
+                    android:id="@+id/medsenior"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"  />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/vivamedx"
+                android:onClick="chamaProdutoVivamed"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  />
+
+        </LinearLayout>
+
+    </GridLayout>
+
+
+</LinearLayout>
